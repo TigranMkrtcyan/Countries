@@ -1,9 +1,11 @@
 .home {
-    margin-top: 100px;
-    width: 1280px;
+    margin-top: 110px;
+    width: 100%;
+    max-width: 1280px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    gap:50px;
-}
+    align-items: stretch;
+    gap: 30px;
+    padding: 0 20px;
+  }

@@ -1,8 +1,12 @@
+import { useContext } from "react"
 import Flag from "../../components/Flag/Flag"
 
 import style from './Home.module.css'
+import { MyContext } from "../../Data/context"
 
-const Home = ({ countries }) => {
+const Home = () => {
+    const { countries } = useContext(MyContext)
+
     return (
         <div className= {style.home}>
             {
