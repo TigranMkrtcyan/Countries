@@ -16,7 +16,7 @@ function App({ data }) {
   useEffect(() => {
     API.getAll(dispatch)
   }, [])
-
+  
   return (
     <div className='app'>
       <MyContext.Provider
@@ -24,7 +24,9 @@ function App({ data }) {
           nav : data.nav,
           dispatch,
           countries : state.countries,
-          country : state.country
+          country : state.country,
+          text : state.text,
+          search : state.search
         }}
       >
       <Routes>

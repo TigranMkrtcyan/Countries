@@ -11,7 +11,7 @@ const Country = () => {
 
   useEffect(() => {
     API.getCountry(dispatch, name)
-  }, []);
+  }, [name]);
 
   if (!country || !country.length) {
     return (
